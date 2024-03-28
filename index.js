@@ -115,3 +115,15 @@ function getLongestOfThreeWords(word1, word2, word3) {
 
 var output = getLongestOfThreeWords("these", "three", "words")
 console.log(output);
+
+// 1.9
+function multiply(num1, num2) {
+    var result = 0;
+    for (var i = 0; i < num2; i++) {
+        result += num1;
+    }
+    return result;
+}
+
+var output = multiply(4, 7);
+console.log(output);
