@@ -47,3 +47,20 @@ function joinArrayOfArrays(arr) {
 
 var output = joinArrayOfArrays([[1, 4], [true, false], ["x", "y"]]);
 console.log(output);
+
+// 1.5
+function findSmallestNumberAmongMixedElements(arr) {
+    var numbers = arr.filter(function(element) {
+        return typeof element === 'number';
+    });
+
+    if (arr.length === 0 || numbers.length === 0) {
+        return 0;
+    }
+
+    var smallestNumber = Math.min.apply(null, numbers);
+    return smallestNumber;
+}
+
+var output = findSmallestNumberAmongMixedElements([4, 'lincoln', 9, "octopus"]);
+console.log(output);
