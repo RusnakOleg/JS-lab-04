@@ -64,3 +64,15 @@ function findSmallestNumberAmongMixedElements(arr) {
 
 var output = findSmallestNumberAmongMixedElements([4, 'lincoln', 9, "octopus"]);
 console.log(output);
+
+// 1.6
+function computeSummationToN(n) {
+    var sum = 0;
+    for (var i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+var output = computeSummationToN(6);
+console.log(output);
