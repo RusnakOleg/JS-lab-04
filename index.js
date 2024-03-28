@@ -37,3 +37,13 @@ function getLengthOfShortestElement(arr) {
 
 var output = getLengthOfShortestElement(["one", "two", "three"]);
 console.log(output);
+
+//1.4
+function joinArrayOfArrays(arr) {
+    return arr.reduce(function(acc, curr) {
+        return acc.concat(curr);
+    }, []);
+}
+
+var output = joinArrayOfArrays([[1, 4], [true, false], ["x", "y"]]);
+console.log(output);
